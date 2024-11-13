@@ -1,0 +1,13 @@
+services:
+  belajar_poetry:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    tty: true
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - ./app:/home/belajar/app
+    environment:
+      - PORT=${PORT}
+    entrypoint: "sh scripts/setup.sh"
