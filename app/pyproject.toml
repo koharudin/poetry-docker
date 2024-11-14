@@ -1,15 +1,15 @@
 [tool.poetry]
-name = "belajar"
+name = "app"
 version = "0.1.0"
 description = ""
-authors = ["koharudin"]
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.115.5"
 uvicorn = "^0.32.0"
-
 
 [build-system]
 requires = ["poetry-core"]
